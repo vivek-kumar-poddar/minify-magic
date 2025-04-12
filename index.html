@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create JavaScript Minifier Application</title>
+    <!-- Load HTML minifier script -->
+    <script src="https://cdn.jsdelivr.net/gh/vivek-kumar-poddar/convertvkp-assets@refs/heads/main/minify-assets/aHRtbG1pbmlmaWVy.min.js"></script>
+    <script>
+      // Make sure the HTML minifier is available globally
+      window.htmlMinifier = require("html-minifier").minify;
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
